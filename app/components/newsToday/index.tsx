@@ -7,7 +7,6 @@ const NewsToday = () => {
   return (
     <>
       <SubTopic/>
-      <SeeMore/>
       <ArticleBox/>
     </>
   );
