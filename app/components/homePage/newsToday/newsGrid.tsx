@@ -3,7 +3,7 @@ import React from 'react'
 const NewsGrid = () => {
   return (
     <>
-    <div>
+    <div className='mb-0'>
         <img 
                 className='w-full h-full object-cover rounded '
                 src='/a-1.jpg'

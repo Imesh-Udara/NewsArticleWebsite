@@ -10,17 +10,18 @@ const Footer = () => {
   return (
     <>
     <div className="bg-black p-16 mt-16 ">
-      <div className="container grid grid-cols-4 gap-4 bg-black text-white ">
-        <div className="">
-          <div >
+      <div className="container grid grid-cols-1 gap-4 text-center  bg-black text-white md:grid-cols-5 md:text-left">
+        <div className="md:col-span-2">
+          <div className="flex justify-center md:justify-start md:mb-3">
             <Image 
               src="/LOGO.png"
               width={100}
               height={100}
               alt="Picture of the author"
+              
             />
           </div >
-          <p className="text-white leading-9">
+          <p className="text-white leading-8">
             The News Entertainment (Pvt) Ltd<br></br>
             320, T.B. Jayah Mawatha,<br></br> Colombo 10.
           </p>
@@ -41,10 +42,10 @@ const Footer = () => {
             <li className="leading-9">Licences</li>
           </ul>
         </div>
-        <div>
+        <div className="">
           
             <p className="mb-2 font-bold text-red-400 leading-9">Social Media</p>
-            <ul className="flex gap-x-6">
+            <ul className="flex gap-x-6  justify-center md:justify-start">
                 <Link href={"/"}><li className=""><BsFacebook size="30" /></li></Link>
                 <Link href={"/"}><li><BsYoutube size="32"/></li></Link>
                 <Link href={"/"}><li><FaTwitter size="30"/></li></Link>

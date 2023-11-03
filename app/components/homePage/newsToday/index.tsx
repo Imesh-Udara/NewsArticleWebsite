@@ -6,7 +6,6 @@ import SubTopic from "./SubTopic";
 const NewsToday = () => {
   return (
     <>
-      <SubTopic/>
       <ArticleBox/>
     </>
   );
