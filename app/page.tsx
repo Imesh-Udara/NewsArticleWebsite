@@ -8,8 +8,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <div>
-          <BottomNav />
+        <div>          
           <Hero />
           <NewsToday />
         </div>

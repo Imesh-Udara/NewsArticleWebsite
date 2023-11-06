@@ -3,73 +3,37 @@ import React from 'react'
 import {BiHomeCircle} from 'react-icons/bi'
 
 const BottomNav = () => {
+  const links = [
+    {label: 'Hot News', href: '/hotnews'},
+    {label: 'Sports', href: '/sports'},
+    {label: 'Biz', href: '/biz'},
+    {label: 'Entertainment', href: '/entertainment'},
+    {label: 'Cinema', href: '/cinema'},
+    {label: 'Health', href: '/health'},
+    {label: 'America', href: '/america'},
+    {label: 'Asia', href: '/asia'},
+    {label: 'Business', href: '/business'},
+    {label: 'U.S', href: '/u.s'},
+    {label: 'Technology', href: '/technology'},
+    
+  ]
   return (
     <>
+    <nav>
         <div className="container mx-auto px-2  h-20   top-0 mt-2 ">
         <div className="container  px-4 h-12 bg-rose-500 rounded md:h-14">
           <div className="flex justify-between items-center h-full ">
             <Link href={"/"}><BiHomeCircle size="24" color="white"/></Link>
             <ul className="hidden md:flex gap-x-6 text-white px-2">
-                
-              <li>
-                <Link href="/hotnews">
-                  <p>Hot News</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/sports">
-                <p>Sports</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/bizs">
-                <p>Biz</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/entertainment">
-                <p>Entertainment</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/cinema">
-                <p>Cinema</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/health">
-                <p>Health</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/america">
-                <p>America</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/asia">
-                  <p>Asia</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/asia">
-                  <p>Business</p>
-                </Link>
-              </li>  
-              <li>
-                <Link href="/asia">
-                  <p>U.S</p>
-                </Link>
-              </li>  
-              <li>
-                <Link href="/asia">
-                  <p>Technology</p>
-                </Link>
-              </li>                              
+              {links.map(link =><Link 
+              key={link.href} 
+              className='text-white hover:text-zinc-800 transition-colors' 
+              href={link.href}>{link.label}</Link>)}                             
             </ul>                       
           </div>
         </div>
       </div>
+      </nav>
     </>
   )
 }
